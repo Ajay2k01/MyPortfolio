@@ -583,8 +583,13 @@ textarea.contact-input {
 .blog .section-text { margin-block-end: 80px; }
 
 .blog-list {
-  display: grid;
-  gap: 40px;
+  /* display: grid;
+  gap: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
 }
 
 .blog-card { font-family: var(--ff-barlow); }
@@ -594,6 +599,10 @@ textarea.contact-input {
   border-radius: var(--radius-15);
   overflow: hidden;
   margin-block-end: 20px;
+  max-width: 40%; /* Adjust the image size as needed */
+  height: auto;
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
 }
 
 .blog-card .card-banner img { transition: var(--transition-2); }
@@ -607,13 +616,23 @@ textarea.contact-input {
 
 .blog-card .card-tag {
   color: var(--orange-soda);
+  margin-top:10px;
   margin-block-end: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10;
+  list-style: none;
+
 }
 
 .blog-card .card-title {
   color: var(--white);
   font-weight: var(--fw-600);
   line-height: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-card .card-title a { transition: var(--transition-2); }
